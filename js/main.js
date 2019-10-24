@@ -73,6 +73,21 @@ $( "button.trigger" ).click(function() {
   $( ".result" ).load( "file:///C:/Users/nkartouby/Desktop/JqueryTraining/exo11.html" );
 });
 
+//exo 13
+$(document).ajaxSend(function(){
+  $(".log13").text("Triggered ajaxSend handler");
+});
+$( "button.trigger13" ).click(function() {
+  $( ".result" ).load( "file:///C:/Users/nkartouby/Desktop/JqueryTraining/exo11.html" );
+});
+
+//exo17
+$("#button17").click(function(){
+  var count= $("*").length;
+  $("body").prepend("<h2>Nombre d'elements: "+ count+"</h2>");
+});
+
+//exo18
 
 });//END READY
 
